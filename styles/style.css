@@ -294,15 +294,6 @@ mark {
   -moz-box-shadow: 0px 18px 47px -8px rgba(168, 168, 168, 0.47);
   box-shadow: 0px 18px 47px -8px rgba(168, 168, 168, 0.47);
 }
-.presentation-form::after {
-  position: absolute;
-  content: "";
-  bottom: -20px;
-  right: -80px;
-  width: 113px;
-  height: 200px;
-  background: url("../images/phone.svg") no-repeat center center / contain;
-}
 .presentation-form__subtitle {
   font-size: 26px;
   color: var(--red);
@@ -425,13 +416,17 @@ mark {
 /* стили для блока мейн */
 
 main {
-  padding-top: 100px;
+  /* padding-top: 100px; */
+  padding-top: 50px;
   flex-grow: 1;
 }
 
 .franchise-features {
   position: relative;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
+  padding-top: 50px;
+  padding-bottom: 80px;
+  overflow: hidden;
 }
 .franchise-features::before {
   position: absolute;
@@ -445,9 +440,9 @@ main {
 .franchise-features:after {
   position: absolute;
   content: "";
-  top: -20px;
+  top: 0;
   right: 0;
-  bottom: -150px;
+  bottom: 0;
   width: 100%;
   background: url("../images/phone_bg_2.png") no-repeat right bottom / contain;
 }
@@ -474,10 +469,11 @@ main {
 
 @media screen and (max-width: 1200px) {
   main {
-    padding-top: calc(20px + 80 * ((100vw - 20rem) / 820));
+    padding-top: calc(25px + 25 * ((100vw - 20rem) / 820));
   }
   .franchise-features {
-    margin-bottom: calc(40px + 40 * ((100vw - 20rem) / 820));
+    padding-top: calc(25px + 25 * ((100vw - 20rem) / 820));
+    padding-bottom: calc(40px + 40 * ((100vw - 20rem) / 820));
   }
   .franchise-features:after {
     /* position: unset; */
