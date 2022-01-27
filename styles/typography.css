@@ -1,0 +1,14 @@
+body {
+  color: var(--black);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  /* line-height: 26px; */
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+  color: inherit;
+}
